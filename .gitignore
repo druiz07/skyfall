@@ -1,0 +1,11 @@
+.env
+data_local/
+cookies.txt
+__pycache__/
+node_modules/
+.venv/
+*.egg-info/
+.pytest_cache/
+frontend/dist/
+
+CLAUDE.md

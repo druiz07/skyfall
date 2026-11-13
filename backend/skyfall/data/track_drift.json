@@ -1,0 +1,85 @@
+{
+ "age_edges_h": [
+  6.0,
+  12.0,
+  24.0,
+  48.0,
+  72.0,
+  120.0
+ ],
+ "buckets": [
+  {
+   "age": "<6h",
+   "n": 87,
+   "n_lost": 0,
+   "p50_km": 11.8,
+   "p90_km": 19.2,
+   "p99_km": 39.8,
+   "sigma_km": 11.7
+  },
+  {
+   "age": "6-12h",
+   "n": 227,
+   "n_lost": 0,
+   "p50_km": 22.1,
+   "p90_km": 38.6,
+   "p99_km": 204.0,
+   "sigma_km": 23.4
+  },
+  {
+   "age": "12-24h",
+   "n": 311,
+   "n_lost": 5,
+   "p50_km": 36.9,
+   "p90_km": 74.5,
+   "p99_km": 145.4,
+   "sigma_km": 45.3
+  },
+  {
+   "age": "1-2d",
+   "n": 336,
+   "n_lost": 28,
+   "p50_km": 74.2,
+   "p90_km": 130.6,
+   "p99_km": 192.6,
+   "sigma_km": 79.4
+  },
+  {
+   "age": "2-3d",
+   "n": 254,
+   "n_lost": 30,
+   "p50_km": 118.9,
+   "p90_km": 202.0,
+   "p99_km": 268.6,
+   "sigma_km": 122.8
+  },
+  {
+   "age": "3-5d",
+   "n": 443,
+   "n_lost": 72,
+   "p50_km": 125.9,
+   "p90_km": 302.7,
+   "p99_km": 776.8,
+   "sigma_km": 184.0
+  },
+  {
+   "age": ">5d",
+   "n": 26,
+   "n_lost": 15,
+   "p50_km": 109.7,
+   "p90_km": 147.3,
+   "p99_km": 220.0,
+   "sigma_km": 184.0
+  }
+ ],
+ "source": {
+  "query": "Space-Track TIP, DECAY_EPOCH 2025-10-01..2026-10-03, + gp_history",
+  "built_at": "2026-10-04",
+  "objects": "even NORAD ids with a post-re-entry confirmation (learn half)",
+  "excluded_norad": [
+   46698
+  ],
+  "n_objects": 302,
+  "n_notices": 1684
+ }
+}

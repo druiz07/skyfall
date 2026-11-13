@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skyfall"
+version = "0.1.0"
+description = "Probabilistic debris re-entry corridors vs. precautionary airspace closures"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.7",
+    "sgp4>=2.23",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "httpx2>=2.13",
+]
+
+[tool.setuptools.packages.find]
+include = ["skyfall*"]
+
+[tool.setuptools.package-data]
+skyfall = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
